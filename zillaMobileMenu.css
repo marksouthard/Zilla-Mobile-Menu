@@ -1,0 +1,63 @@
+/* Mobile Menu ----- */
+.zilla-mobile-menu-wrap {
+	background: #232527;
+	min-height: 45px;
+	position: relative;
+	width: 100%;
+}
+
+.zilla-mobile-menu { 
+	background: #232527;
+	display: block; 
+	margin-left: 0;
+	padding: 0 0 20px;
+	padding: 0 0 2rem;
+	width: 100%;
+	z-index: 998;
+}
+
+.zilla-mobile-menu ul { margin: 0 0 0 10px; }
+
+.zilla-mobile-menu > li {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.zilla-mobile-menu li { border-top: 1px solid #313335; }
+
+.zilla-mobile-menu > li:first-child { border-top: none; }
+
+.zilla-mobile-menu a {
+	border-bottom: none;
+	color: #9da0a4;
+	display: block;
+	height: 2em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+.zilla-mobile-menu .current-menu-item a,
+.zilla-mobile-menu .current_page_item a,
+.zilla-mobile-menu a:hover {
+	border-bottom: none;
+	color: #ffffff;
+}
+
+.zilla-mobile-menu-dropdown { 
+	background: #232527 url(menu-icon.gif) 5% 48% no-repeat;
+	border-bottom: none;
+	color: #f1f1f1;
+	cursor: pointer;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 5%;
+	position: absolute;
+	overflow: hidden;
+	text-indent: 100%;
+	width: 95%;
+	white-space: nowrap;
+	z-index: 9999;
+}
+
+.zilla-mobile-menu-dropdown:hover { border-bottom: none; }

@@ -1,0 +1,35 @@
+/*
+Just a basic styling for the demo
+*/
+
+body {
+	background: #e1e1e1;
+	font: 16px/1.4 'Helvetica Neue' Helvetica Arial sans-serif normal;
+}
+
+.wrap {
+	background: #f0f0f0;
+	border: 1px solid #f1f1f1;
+	margin: 30px auto 20px;
+	max-width: 980px;
+	min-height: 650px;
+	padding: 20px;
+	width: 90%;
+}
+
+header { margin-bottom: 30px; }
+
+header ul.sub-menu {
+	margin-left: 15px;
+}
+
+header a {
+	color: #888;
+	text-decoration: none;
+}
+
+header a:hover { color: #444; }
+
+.content {
+	clear: both;
+}

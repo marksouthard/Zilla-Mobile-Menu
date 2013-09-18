@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Zilla Mobile Menu Plugin</title>
+	<meta name="description" content="Zilla Mobile Menu Plugin">
+	<meta name="author" content="Mark Southard">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../zillaMobileMenu.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<nav>
+				<ul id="zilla-menu">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Children</a>
+						<ul class="sub-menu">
+							<li>
+								<a href="#">I has them.</a>
+							</li>
+							<li>
+								<a href="#">Really? Me too.</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="#">Hiya!</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="scripts/jquery-1.10.min.js"></script>
+	<script type="text/javascript" src="../jquery.zillamobilemenu.min.js"></script>
+	<script type="text/javascript">
+		(function($) {
+			"use strict";
+
+			$(document).ready(function() {
+				$('#zilla-menu').zillaMobileMenu({
+					hideNavParent: true
+				// onInit: function(m) {
+				// $(m).removeClass('sf-menu primary-menu');
+				// }
+				});
+			});
+
+		})(window.jQuery);
+	</script>
+</body>
+</html>
